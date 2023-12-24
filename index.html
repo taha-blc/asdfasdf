@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter taha bilici</title>
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!--css file-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>Currency Converter</header>
+      <form action="#">
+        <div class="amount">
+          <p>Enter Amount</p>
+          <input type="number" placeholder="enter number" id="number"/>
+        </div>
+        <div class="drop-list">
+          <div class="from">
+            <p>From</p>
+            <div class="select-box">
+              <!-- <img src="https://flagcdn.com/48x36/us.png" alt="" /> -->
+              <select name="" id="firstCurrencyOption">
+                <!--options will be added using JS-->
+                
+                    <option value="EUR">EUR</option>
+                    <option value="JPY">JPY</option>
+                    <option value="BGN">BGN</option>
+                    <option value="CZK">CZK</option>
+                    <option value="DKK">DKK</option>
+                    <option value="GBP">GBP</option>
+                    <option value="HUF">HUF</option>
+                    <option value="PLN">PLN</option>
+                    <option value="RON">RON</option>
+                    <option value="SEK">SEK</option>
+                    <option value="CHF">CHF</option>
+                    <option value="ISK">ISK</option>
+                    <option value="NOK">NOK</option>
+                    <option value="HRK">HRK</option>
+                    <option value="RUB">RUB</option>
+                    <option value="TRY" selected>TRY</option>
+                    <option value="AUD">AUD</option>
+                    <option value="BRL">BRL</option>
+                    <option value="CAD">CAD</option>
+                    <option value="CNY">CNY</option>
+                    <option value="HKD">HKD</option>
+                    <option value="IDR">IDR</option>
+                    <option value="ILS">ILS</option>
+                    <option value="INR">INR</option>
+                    <option value="KRW">KRW</option>
+                    <option value="MXN">MXN</option>
+                    <option value="MYR">MYR</option>
+                    <option value="NZD">NZD</option>
+                    <option value="PHP">PHP</option>
+                    <option value="SGD">SGD</option>
+                    <option value="THB">THB</option>
+                    <option value="ZAR">ZAR</option>
+                    <option value="USD">USD</option>
+              </select>
+            </div>
+          </div>
+          <div class="icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+          <div class="to">
+            <p>To</p>
+            <div class="select-box">
+              
+              <select name="" id="secondCurrencyOption">
+                <!--options will be added using JS-->
+                <option value="EUR">EUR</option>
+                <option value="JPY">JPY</option>
+                <option value="BGN">BGN</option>
+                <option value="CZK">CZK</option>
+                <option value="DKK">DKK</option>
+                <option value="GBP">GBP</option>
+                <option value="HUF">HUF</option>
+                <option value="PLN">PLN</option>
+                <option value="RON">RON</option>
+                <option value="SEK">SEK</option>
+                <option value="CHF">CHF</option>
+                <option value="ISK">ISK</option>
+                <option value="NOK">NOK</option>
+                <option value="HRK">HRK</option>
+                <option value="RUB">RUB</option>
+                <option value="TRY" >TRY</option>
+                <option value="AUD">AUD</option>
+                <option value="BRL">BRL</option>
+                <option value="CAD">CAD</option>
+                <option value="CNY">CNY</option>
+                <option value="HKD">HKD</option>
+                <option value="IDR">IDR</option>
+                <option value="ILS">ILS</option>
+                <option value="INR">INR</option>
+                <option value="KRW">KRW</option>
+                <option value="MXN">MXN</option>
+                <option value="MYR">MYR</option>
+                <option value="NZD">NZD</option>
+                <option value="PHP">PHP</option>
+                <option value="SGD">SGD</option>
+                <option value="THB">THB</option>
+                <option value="ZAR">ZAR</option>
+                <option value="USD" selected>USD</option>                    
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="exchange_rate">Select currency to exchange and click the button...</div>
+        <button id="btn">Get Change Rate</button>
+        <h4 id="result">.....</h4>
+      </form>
+    </div>
+
+    <!-- <script src="country-list.js"></script> -->
+    <script src="node_modules/js-big-decimal/dist/web/js-big-decimal.min.js"></script>
+
+    <script src="main.js"></script> 
+
+
+  </body>
+</html>
