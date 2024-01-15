@@ -9,6 +9,11 @@ const resultInput = document.querySelector("#result");
 const btn = document.querySelector("#btn");
 
 
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+    alert('sağ tik yapamazsin')
+});
+
 
 async function checkcorunsy() {
     const response = await fetch(apiUrl + `?apikey=${apiKey}`);
@@ -36,10 +41,9 @@ async function checkcorunsy() {
 
     }
 
-    console.log(birinciSayi)
-    console.log(ikinciSayi)
+    
     let sonuc = ((ikinciSayi * amount).toFixed(2) / birinciSayi).toFixed(2)
-    console.log(sonuc)
+    
     resultInput.innerHTML = `${amount} ${firstOptionValue} = ${sonuc} ${secondOptionValue}`
 
 }
