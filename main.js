@@ -11,7 +11,7 @@ const btn = document.querySelector("#btn");
 
 document.addEventListener('contextmenu', function (e) {
     e.preventDefault();
-    alert('sağ tik yapamazsin')
+    alert('You cannot access the codes of the project this way :)')
 });
 
 
